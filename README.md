@@ -12,7 +12,7 @@ This application uses:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 This entire application is containerized. The only prerequisites are **Docker Desktop** and a **Google API Key**.
 
