@@ -1,0 +1,12 @@
+# Secret keys
+.env
+
+# Python virtual environment
+venv/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Test file
+test_document.pdf

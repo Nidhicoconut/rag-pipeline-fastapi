@@ -1,0 +1,27 @@
+# File: docker-compose.yml
+
+version: '3.8'
+
+services:
+  # This is the name of our service
+  rag-api:
+    # Tell Docker Compose to build the image from the Dockerfile
+    # in the current directory ('.')
+    build: .
+    
+    # Map port 8000 on your local machine to port 8000 inside the container
+    ports:
+      - "8000:8000"
+      
+    # Mount volumes
+    # This mounts your 'data' folder on your host machine
+    # to the '/app/data' folder inside the container.
+    # This is CRITICAL so your ChromaDB database is saved
+    # permanently on your computer, not lost when the container stops.
+    volumes:
+      - ./data:/app/data
+      
+    # Tell Docker Compose to load environment variables
+    # from your .env file
+    env_file:
+      - .env

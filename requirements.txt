@@ -1,0 +1,26 @@
+# File: requirements.txt
+
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+
+# Core RAG libraries
+langchain
+langchain-community
+langchain-google-genai
+
+# Document loading
+pypdf
+
+# Embeddings
+sentence-transformers
+
+# Vector Database
+chromadb
+
+# For testing
+pytest
+httpx
+
+python-multipart
